@@ -1,0 +1,35 @@
+Java Serializer in Ruby using Metamodel
+
+Also:
++ Discovery of available gadget classes (blind + remote)
++ JRMP/RMI Client
++ JMX/RMI Scanning (related: metasploit modules available)
+
+Currently ported payloads:
+- Commons Collections (very portable variant)
+- Commons Beanutils
+- C3P0
+- Groovy
+- Hibernate Validator
+- Jython
+- ROME
+- Spring JTA
+- Hibernate ORM
+- Rhino
+- net.sf.JSON
+- Beanshell
+
+
+Pros:
+- in many cases generates smaller payloads
+- no need to carry around possibly hundreds of megabytes of 
+  libraries/maven respositories (and possibly malicious code)
+- metasploit integration
+- directly inject meterpreter through serialized payloads
+- addresses some other issues with practical use of ysoserial, including
+   * proper shell commandsline handling
+   * better support for payload variants
+   * parametrization
+
+
+See test*.rb for some usage examples
